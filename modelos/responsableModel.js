@@ -23,3 +23,4 @@ const responsables = [
 ];
 
 module.exports = responsables;
+

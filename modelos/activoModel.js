@@ -31,15 +31,12 @@ const activos = [
     }
 ];
 
-activos.find()
-    .then(activo => {
-        res.status(200).json(activo);
-    })
-    .catch(error => {
-        res.status(500).json({
-            message: "Error al obtener los activos",
-            error: error
-        });
-    });
 
-module.exports = activos;   
+const find = () => {
+    return activos;
+}
+
+module.exports = {
+    activos,
+    find
+};   
