@@ -1,4 +1,4 @@
-const ubicacion = [
+const ubicaciones = [
     {
         idUbicacion: "20",
         descripcion : "Mexico",
@@ -19,4 +19,17 @@ const ubicacion = [
     }
 ];
 
-module.exports = ubicacion; 
+const obtenerTodos = () => {
+    return ubicaciones;
+};
+
+const agregar = (nuevaUbicacion) => {
+    ubicaciones.push(nuevaUbicacion);
+};
+
+module.exports = {
+
+    obtenerTodos,
+    agregar
+};
+

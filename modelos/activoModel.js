@@ -32,11 +32,16 @@ const activos = [
 ];
 
 
-const find = () => {
+const obtenerTodos = () => {
     return activos;
-}
+};
+
+const agregar = (nuevoActivo) => {
+    activos.push(nuevoActivo);
+};
 
 module.exports = {
     activos,
-    find
-};   
+    obtenerTodos,
+    agregar
+};

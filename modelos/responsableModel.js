@@ -22,5 +22,16 @@ const responsables = [
     }
 ];
 
-module.exports = responsables;
+const obtenerTodos = () => {
+    return responsables;
+};
+
+const agregar = (nuevoResponsable) => {
+    responsables.push(nuevoResponsable);
+};
+
+module.exports = {
+    obtenerTodos,
+    agregar
+};
 
