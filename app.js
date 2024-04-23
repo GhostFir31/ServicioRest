@@ -6,7 +6,6 @@ const activoController = require('./controladores/activoController');
 const responsableController = require('./controladores/responsableController');
 const ubicacionController = require('./controladores/ubicacionController');
 
-
 app.use(bodyParser.json());
 
 const myMiddleware = (req, res, next) => {
